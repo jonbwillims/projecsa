@@ -1,0 +1,106 @@
+.container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .board {
+    display: inline-block;
+    border: 2px solid black;
+  }
+  
+
+  
+  h1 {
+    font-family: Arial, sans-serif;
+  }
+  
+  
+  .board {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    /* grid-gap: 10px; */
+  }
+  
+  
+  .cell {
+    border: 1px solid black;
+    /* width: 60px; */
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .buttons {
+    margin-top: 20px;
+  }
+  
+  .buttons button {
+    margin-right: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .buttons button.active {
+    background-color: yellow;
+  }
+  
+  /* Existing styles */
+
+
+  /* Add the following styles for the Nuclear Bomb animation */
+  .nuclear-bomb-animation {
+    animation: shake 2s infinite;
+  }
+  
+  @keyframes shake {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(10deg);
+    }
+    50% {
+      transform: rotate(-10deg);
+    }
+    75% {
+      transform: rotate(10deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
+    /* Add the following styles for the Nuclear Explosion animation */
+    .nuclear-explosion-animation {
+        animation: explode 2s infinite;
+        }
+
+        @keyframes explode {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.5);
+        }
+        100% {
+            transform: scale(1);
+        }
+        }
+
+/* Add the following styles for the Zigzag Zap animation */
+.zigzag-zap-animation {
+    animation: zigzag-zap 1s alternate infinite;
+  }
+  
+  @keyframes zigzag-zap {
+    0% {
+      transform: rotate(-5deg);
+    }
+    100% {
+      transform: rotate(5deg);
+    }
+}
